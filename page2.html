@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code O'Clock - Tracking</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logop 1.png" alt="Logo" />
+        <span>Code O’Clock</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Log In/Sign Up</a>
+    </nav>
+</header>
+
+
+<!-- TRACKING SECTION -->
+<div class="tracker-container">
+    <div class="tracking-row">
+
+        <!-- Project Select -->
+        <div class="dropdown">
+             <h3>Choose your project type</h3>
+            <select id="projectSelect">
+                <option value="" disabled selected>select</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>UI/UX</option>
+                <option>Full Stack</option>
+            </select>
+        </div>
+
+        <!-- Timer -->
+        <div class="timer-display" id="timer">00:00:00</div>
+
+        <!-- Start / Stop Buttons -->
+        <div class="buttons">
+            <button class="start" id="startBtn">Start</button>
+             <button class="pause" id="pauseBtn">Pause</button>
+            <button class="stop" id="stopBtn">Stop</button>
+        </div>
+
+    </div>
+
+    <!-- Task Name -->
+    <div class="name-task-container">
+    <h3 id="nametask">Name Your Task</h3>
+    <input id="taskName" class="task-input" placeholder="Describe Task">
+</div>
+</div>
+
+
+<!-- TASK TABLE -->
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Task Date</th>
+                <th>Time Spent</th>
+                <th>Project</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody id="taskTableBody">
+            <!-- Example rows -->
+            <tr>
+                <td>2025/11/01</td>
+                <td>04:24:10</td>
+                <td>Logo Design</td>
+                <td>Completed</td>
+                <td class="actions">
+                    <span>✏️</span>
+                    <span>🗑️</span>
+                    <span>⋯</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>

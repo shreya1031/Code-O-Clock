@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background: #f0ece5;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 95px;
+    margin-right: 15px;
+}
+
+.navbar nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #777;
+}
+
+/* TRACKER SECTION */
+.tracker-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tracker-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.tracking-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+.dropdown select {
+    padding: 15px 20px;
+    width: 200px;
+    font-size: 24px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background: #f7f2eb;
+}
+
+.timer-display {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.buttons button {
+    padding: 25px 40px;
+    font-size: 32px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start {
+    background: #5fb34b;
+    margin-right: 20px;
+}
+.stop {
+    background: #b4322e;
+}
+.pause
+{
+    background: #f0a500;
+    margin-right: 20px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.task-input {
+    margin-top: 15px;
+    padding: 15px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #f7f2eb;
+  
+}
+
+/* Move the heading + input to the left */
+.name-task-container {
+    text-align: left;
+    margin-left: 80px;  
+    
+}
+
+/* Make placeholder AND text inside fully left-aligned */
+#taskName {
+    text-align: left;
+    padding-left: 10px;  
+}
+
+#nametask {
+    margin-left: 50px;
+}
+#taskName::placeholder {
+    text-align: center;
+}
+/* TABLE */
+.table-container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+}
+
+table th {
+    background: #eef0f2;
+    padding: 18px;
+    text-align: left;
+    font-size: 18px;
+}
+
+table td {
+    padding: 18px;
+    border-top: 1px solid #ececec;
+}
+
+.actions span {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
